@@ -35,9 +35,11 @@
 
  Write an if statement that prints "Brr, grab your winter jacket!" when the temperature is equal to 0.
  */
-var temperature = 0
-
 // Answer Question 1 below
+var temperature = 0
+if temperature == 0 {
+    print("Brr, grab your winter jacket!")
+}
 
 
 /*:
@@ -49,6 +51,12 @@ var temperature = 0
  Write an if-else if statement that prints "Brr, grab your winter jacket!" if `temperature` is equal to 0, and temperature is anything less than 0, prints "Don't leave your water glass outside!".
  */
 temperature = -20
+if temperature == 0 {
+    print("Brr, grab your winter jacket!")
+}
+if temperature < 0 {
+    print("Don't leave your water glass outside!")
+}
 
 // Answer Question 2 below
 
@@ -67,9 +75,16 @@ temperature = -20
  
  */
 temperature = 15
-
 // Answer Question 3 below
-
+if temperature == 0 {
+    print("Brr, bring your winter jacket!")
+}
+if temperature < 0 {
+    print("Don't leave your water glass outside!")
+}
+else {
+    print("It could be shorts weather but you might still be a bit chilly!")
+}
 /*:
  
  ### Question 4
@@ -88,8 +103,9 @@ let alwaysGetsAttentionBySayingGentsAndLadies = true
 let teachesOutdoorEd = true
 
 // Answer Question 4 below
-
-
+if hasRedHair , alwaysGetsAttentionBySayingGentsAndLadies , teachesOutdoorEd {
+    print("Must be Gordon!")
+} else {"Hmm, need more data to be sure." }
 /*:
  
  ### Question 5
@@ -109,7 +125,11 @@ let isComedy = false
 let starsTheRock = true
 
 // Answer Question 5 below
-
+if isAction, starsTheRock {
+    print("Let's watch!")
+} else {
+    print("Sorry, guess we'll have to play Tic-Tac-Toe instead.")
+}
 
 /*:
  
@@ -127,7 +147,18 @@ let starsTheRock = true
  */
 
 // Answer Question 6 below
-
-
+var finalGrade = 90
+if finalGrade >= 80 {
+    print("You've learned a lot, well done!")
+}
+if finalGrade >= 60 {
+    print("Hmm, not bad, but could be better.")
+}
+if finalGrade >= 50 {
+    print("Should have booked more Grove Times.")
+}
+else {
+    print("I literally can't even.")
+}
 
 
