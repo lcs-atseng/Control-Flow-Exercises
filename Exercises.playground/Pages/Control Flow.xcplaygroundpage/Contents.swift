@@ -53,8 +53,7 @@ if temperature == 0 {
 temperature = -20
 if temperature == 0 {
     print("Brr, grab your winter jacket!")
-}
-if temperature < 0 {
+} else if temperature < 0 {
     print("Don't leave your water glass outside!")
 }
 
@@ -78,11 +77,9 @@ temperature = 15
 // Answer Question 3 below
 if temperature == 0 {
     print("Brr, bring your winter jacket!")
-}
-if temperature < 0 {
+} else if temperature < 0 {
     print("Don't leave your water glass outside!")
-}
-else {
+} else {
     print("It could be shorts weather but you might still be a bit chilly!")
 }
 /*:
@@ -103,7 +100,7 @@ let alwaysGetsAttentionBySayingGentsAndLadies = true
 let teachesOutdoorEd = true
 
 // Answer Question 4 below
-if hasRedHair , alwaysGetsAttentionBySayingGentsAndLadies , teachesOutdoorEd {
+if hasRedHair == true && alwaysGetsAttentionBySayingGentsAndLadies == true && teachesOutdoorEd == true {
     print("Must be Gordon!")
 } else {"Hmm, need more data to be sure." }
 /*:
@@ -125,7 +122,7 @@ let isComedy = false
 let starsTheRock = true
 
 // Answer Question 5 below
-if isAction, starsTheRock {
+if isAction == true || isComedy == true && starsTheRock == true {
     print("Let's watch!")
 } else {
     print("Sorry, guess we'll have to play Tic-Tac-Toe instead.")
@@ -150,11 +147,9 @@ if isAction, starsTheRock {
 var finalGrade = 90
 if finalGrade >= 80 {
     print("You've learned a lot, well done!")
-}
-if finalGrade >= 60 {
+} else if finalGrade >= 60 {
     print("Hmm, not bad, but could be better.")
-}
-if finalGrade >= 50 {
+} else if finalGrade >= 50 {
     print("Should have booked more Grove Times.")
 }
 else {
